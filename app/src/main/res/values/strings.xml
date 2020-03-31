@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">wellnessApp</string>
+    <string name="app_name">A Maryland Basic Guide to Healthy Living</string>
+
+    <!-- splash screen strings-->
+    <string name="task1_name">Term Glossary</string>
+    <string name="task2_name">Crossword Puzzles</string>
+    <string name="task3_name">Take Parts</string>
+    <string name="task4_name">Story</string>
+    <string name="task5_name">Reading and Speaking Exercises</string>
+
+    <!-- task1 strings -->
+    <string name="t1_random_word_button">Random Word</string>
+    <string name="t1_definition_button">Show Definition</string>
+    <string name="term_placeholder">%1$s</string>
+    <string name="definition_placeholder">%1$s</string>
 </resources>
