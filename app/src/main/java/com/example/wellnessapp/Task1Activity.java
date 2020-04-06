@@ -8,8 +8,13 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.IOException;
+import java.io.InputStream;
+
 public class Task1Activity extends AppCompatActivity {
-    private TextView termView, definitionView;
+    private TextView termView, definitionView, chapterView;
     private GlossaryClass glossary;
     private String activity = "Task1";
 
@@ -20,10 +25,21 @@ public class Task1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_task1);
         termView = findViewById(R.id.word_text);
         definitionView = findViewById(R.id.definition_text);
-        glossary = new GlossaryClass();
-        Pair<String, String> word = glossary.getTerm();
-        termView.setText(getString(R.string.term_placeholder, word.first));
-        definitionView.setText(getString(R.string.definition_placeholder, word.second));
+        chapterView = findViewById(R.id.chapter_text);
+        InputStream in = null;
+        try {
+            in = getAssets().open("term_glossary.xml");
+            glossary = new GlossaryClass(in);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (XmlPullParserException e) {
+            e.printStackTrace();
+        }
+
+        GlossaryTerm word = glossary.getTerm();
+        termView.setText(getString(R.string.term_placeholder, word.getTerm()));
+        definitionView.setText(getString(R.string.definition_placeholder, word.getDefinition()));
+        chapterView.setText(getString(R.string.chapter_placeholder, word.getChapter()));
         Log.i(activity, "onCreateEnds");
     }
 
@@ -32,9 +48,10 @@ public class Task1Activity extends AppCompatActivity {
     }
 
     public void pickWord(View v){
-        Pair<String, String> word = glossary.getTerm();
-        termView.setText(getString(R.string.term_placeholder, word.first));
+        GlossaryTerm word = glossary.getTerm();
+        termView.setText(getString(R.string.term_placeholder, word.getTerm()));
+        chapterView.setText(getString(R.string.chapter_placeholder, word.getChapter()));
         definitionView.setVisibility(View.INVISIBLE);
-        definitionView.setText(getString(R.string.definition_placeholder, word.second));
+        definitionView.setText(getString(R.string.definition_placeholder, word.getDefinition()));
     }
 }
