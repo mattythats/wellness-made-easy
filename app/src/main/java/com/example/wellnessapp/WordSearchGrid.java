@@ -9,12 +9,17 @@ public class WordSearchGrid {
     private int cols, rows;
     private List<WordSearchTerm> terms;
     public String temp;
+    boolean[] wordsFound;
 
     public WordSearchGrid(int c, int r, List<WordSearchTerm> t){
         cols = c;
         rows = r;
         grid = new char[rows][cols];
         terms = t;
+        wordsFound = new boolean[t.size()];
+        for(int i = 0; i < wordsFound.length; i++){
+            wordsFound[i] = false;
+        }
         populateGrid();
     }
 
@@ -26,17 +31,11 @@ public class WordSearchGrid {
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < cols; j++){
                 int rand = r.nextInt(26)+97;
-                while((char) rand == 'l'){
-                    rand = r.nextInt(26)+97;
-                }
                 grid[i][j] = (char)rand;
             }
         }
         for(int i = 0; i < terms.size(); i++){
             WordSearchTerm term = terms.get(i);
-            System.out.println("term: " + term.getWord());
-            System.out.println("pos: (" + term.getStartPos().first + "," + term.getStartPos().second + ")");
-            System.out.println("dir: " + term.getDir());
             if(term.getDir() == 0){
                 addAcrossWord(term);
             } else{
@@ -67,16 +66,14 @@ public class WordSearchGrid {
         }
     }
 
-    public void printGrid(){
-        System.out.println();
-        String s = "";
-        for(int i = 0; i < rows; i++){
-            for(int j = 0; j < cols; j++){
-                s += grid[i][j];
+    public void checkPos(int x, int y){
+        for(int i = 0; i < terms.size(); i++){
+            WordSearchTerm term = terms.get(i);
+            if(term.getStartPos().first == x && term.getStartPos().second == y){
+                System.out.println("Found " + term.getWord());
+                wordsFound[i] = true;
             }
-            s += '\n';
         }
-        temp = s;
     }
 
     public int getCols(){

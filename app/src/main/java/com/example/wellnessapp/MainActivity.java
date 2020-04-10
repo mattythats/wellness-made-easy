@@ -28,9 +28,12 @@ public class MainActivity extends AppCompatActivity {
             Log.i(activity, "Task1 triggered");
             intent = new Intent(this, Task1Activity.class);
         } else if(v.getId() == R.id.to_puzzles_button){
-            Log.i(activity, "Task2 - triggered");
+            Log.i(activity, "Task2 triggered");
             intent = new Intent(this, Task2Activity.class);
-        } else{
+        } else if(v.getId() == R.id.to_exercises){
+            Log.i(activity, "task5 triggered");
+            intent = new Intent(this, Task5Activity.class);
+        } else {
             Context context = getApplicationContext();
             String s;
             if(v.getId() == R.id.to_matching_button || v.getId() == R.id.to_story_button){

@@ -23,4 +23,102 @@
     <string name="word_search_button">Health Word Search</string>
     <string name="crossword_button">Diet Crossword</string>
     <string name="word_bank">Word Bank</string>
+
+    <!-- task5 strings -->
+    <string name = "next">Next Page</string>
+    <string name="prev">Previous Page</string>
+    <string name="back">Back</string>
+
+    <string name="ch1Reading">Reading: Where Do I Go For Health Care?</string>
+    <string name="ch1ReadingLine1">When you are well, see your doctor for a checkup. Your doctor will look for problems you do not see or feel. Finding a health problem early may save your life.</string>
+    <string name="ch1ReadingLine2">When you are sick, go to your primary care center. Your primary care center is the place to go for all your basic health care needs. Call your primary care center to make an appointment.</string>
+    <string name="ch1ReadingLine3">When you have an emergency, go to the hospital emergency room or call 911. An Emergency is when you have a serious medical problem that needs to be addressed right away.</string>
+
+    <string name="ch1Speaking">Speaking: Setting Up an Appointment</string>
+    <string name="ch1SpeakingLine1">Hello, health center, how may I help you?</string>
+    <string name="ch1SpeakingLine2">Hello, this is Fatima Tuma. I want to make an appointment.</string>
+    <string name="ch1SpeakingLine3">How do you spell your name?</string>
+    <string name="ch1SpeakingLine4">T U M A</string>
+    <string name="ch1SpeakingLine5">What is the problem?</string>
+    <string name="ch1SpeakingLine6">I have a headache and sore throat.</string>
+    <string name="ch1SpeakingLine7">Do you have a fever?</string>
+    <string name="ch1SpeakingLine8">No, I don\'t.</string>
+    <string name="ch1SpeakingLine9">Okay, come in tomorrow at 10AM</string>
+    <string name="ch1SpeakingLine10">Thank you</string>
+
+    <string name="ch2Reading">Reading: What will the doctor ask me?</string>
+    <string name="ch2ReadingLine1">What are your symptoms? Before you go to the doctor, practice describing your symptoms in English. Practice with a friend or a family member.</string>
+    <string name="ch2ReadingLine2">What medicine do you take? Before you go to the doctor, write down the names of medicines you take and how much you take each day. Give this list to your doctor. Or you can bring your medicines with you and show them to the doctor.</string>
+    <string name="ch2ReadingLine3">What is your health history? Your health history is the health problems you have now or had in the past. Your doctor will always ask you to fill out a health history form.</string>
+
+    <string name="ch2Reading2">Reading: What will I ask the doctor?</string>
+    <string name="ch2Reading2Line1">Be sure you understand the answers to these questions before you leave your appointment.</string>
+    <string name="ch2Reading2Line2">What is my main problem?</string>
+    <string name="ch2Reading2Line3">What do I need to do/how do I take my medication?</string>
+    <string name="ch2Reading2Line4">Why is it important for me to do this?</string>
+    <string name="ch2Reading2Line5">What if I am getting worse?</string>
+    <string name="ch2Reading2Line6">How do I get my medicine? Where do I go?</string>
+    <string name="ch2Reading2Line7">What are the side effects of my medicine?</string>
+    <string name="ch2Reading2Line8">It is your doctors job to clearly explain the answers to these questions.</string>
+    <string name="ch2Reading2Line9">It is your job to be sure you understand the answers before you leave the doctors office.</string>
+
+    <string name="ch2Speaking">Speaking: Getting Medicine</string>
+    <string name="ch2SpeakingLine1">Hello, my name is Dr.Watson. How may I help you?</string>
+    <string name="ch2SpeakingLine2">I have pain in my back.</string>
+    <string name="ch2SpeakingLine3">Do you have other symptoms?</string>
+    <string name="ch2SpeakingLine4">Yes, it hurts when I walk</string>
+    <string name="ch2SpeakingLine5">What is causing my back pain?</string>
+    <string name="ch2SpeakingLine6">I can give you some medicine to help. Take it two times a day.</string>
+    <string name="ch2SpeakingLine7">How long should I take the medicine?</string>
+    <string name="ch2SpeakingLine8">Take all the medicine. It should last about one week.</string>
+    <string name="ch2SpeakingLine9">Thank you, Doctor.</string>
+
+    <string name="ch2BodyParts">Speaking: Body Parts</string>
+    <string name="ch2BodyParts1">Back</string>
+    <string name="ch2BodyParts2">Chest</string>
+    <string name="ch2BodyParts3">Ears</string>
+    <string name="ch2BodyParts4">Eyes</string>
+    <string name="ch2BodyParts5">Feet</string>
+    <string name="ch2BodyParts6">Hands</string>
+    <string name="ch2BodyParts7">Head</string>
+    <string name="ch2BodyParts8">Neck</string>
+    <string name="ch2BodyParts9">Nose</string>
+    <string name="ch2BodyParts10">Shoulders</string>
+    <string name="ch2BodyParts11">Stomach</string>
+
+    <string name="ch3Speaking">Speaking: Over the Counter Medication</string>
+    <string name="ch3SpeakingLine1">Hello, how can I help you?</string>
+    <string name="ch3SpeakingLine2">I need to find over the counter medication for allergies.</string>
+    <string name="ch3SpeakingLine3">What are your symptoms?</string>
+    <string name="ch3SpeakingLine4">I have a headache and I sneeze often.</string>
+    <string name="ch3SpeakingLine5">Here is a medicine that works for many people. Try this medicine.</string>
+    <string name="ch3SpeakingLine6">Will this medicine cause side effects?</string>
+    <string name="ch3SpeakingLine7">This label says the medicine may make you feel sleepy.</string>
+    <string name="ch3SpeakingLine8">Is there a medicine that will not make me sleepy?</string>
+    <string name="ch3SpeakingLine9">Yes, try this one.</string>
+    <string name="ch3SpeakingLine10">Thank you.</string>
+
+    <string name="ch4Reading">Reading: What is healthy eating?</string>
+    <string name="ch4ReadingLine1">Healthy eating means the body is getting the food it needs to stay healthy. Healthy eating can prevent obesity and other health problems.</string>
+    <string name="ch4ReadingLine2">Other health problems that can be avoided or lessened by healthy eating: Diabetes, High Cholesterol, Osteoporosis, Cancer, Heart Disease and Stroke, High Blood Pressure, Depression, and Eating Disorders.</string>
+
+    <string name="ch4Reading2">Reading: More Variety in Your Diet</string>
+    <string name="ch4Reading2Line1">To stay healthy you need to eat foods from the 5 food groups. These 5 food groups are Fruits, Dairy, Protein, Vegetables, and Grains.</string>
+
+    <string name="ch4Reading3">Reading: Eat More Fruits and Vegetables</string>
+    <string name="ch4Reading3Line1">One of the best things you can do for your health is eat more fruits and vegetables. Fruits and vegetables give you the fiber and vitamins your body needs to stay healthy.</string>
+    <string name="ch4Reading3Line2">People should work to eat 2 servings of fruit and 5 servings of vegetables each day.</string>
+    <string name="ch4Reading3Line3">Examples of a serving are: 1 small apple, 1 large orange, 1 cup of leafy greens(lettuce, spinach, kale), 1 small bell pepper, 1/2 a cup of berries(blueberries, strawberries, grapes), 2 medium carrots.</string>
+
+    <string name="ch4Speaking">Speaking: Fruits and Vegetables</string>
+    <string name="ch4SpeakingLine1">What fruits do you like to eat?</string>
+    <string name="ch4SpeakingLine2">I like to eat oranges and apples.</string>
+    <string name="ch4SpeakingLine3">What vegetables do you like to eat?</string>
+    <string name="ch4SpeakingLine4">I like to eat broccoli and carrots.</string>
+    <string name="ch4SpeakingLine5">Do you like to eat spinach?</string>
+    <string name="ch4SpeakingLine6">No, I do not like to eat spinach. Do you?</string>
+    <string name="ch4SpeakingLine7">No, I do not like spinach either.</string>
+    <string name="ch4SpeakingLine8">Do you like to eat strawberries?</string>
+    <string name="ch4SpeakingLine9">Yes, strawberries are my favorite food</string>
+
 </resources>
