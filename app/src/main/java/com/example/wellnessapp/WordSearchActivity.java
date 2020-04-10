@@ -2,14 +2,12 @@ package com.example.wellnessapp;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.ConstraintSet;
 
 import org.xmlpull.v1.XmlPullParserException;
 

@@ -11,13 +11,14 @@ import java.util.Random;
 
 class GlossaryTerm{
     private String term;
-    private String definition;
-    int chapter;
+    private String definition, drawable;
+    private int chapter;
 
-    GlossaryTerm(String word, String meaning, int c){
+    GlossaryTerm(String word, String meaning, int c, String d){
         term = word;
         definition = meaning;
         chapter = c;
+        drawable = d;
     }
 
     public String getTerm(){
@@ -30,6 +31,10 @@ class GlossaryTerm{
 
     public int getChapter(){
         return chapter;
+    }
+
+    public String getDrawableString(){
+        return drawable;
     }
 
 }
@@ -46,13 +51,29 @@ public class GlossaryClass {
         words = (ArrayList<GlossaryTerm>) gxp.parse();
     }
 
-    public GlossaryTerm getTerm(){
+    public GlossaryTerm randomTerm(){
         Random r = new Random();
         int rand = r.nextInt(words.size());
         while(rand == which_term){
             rand = r.nextInt(words.size());
         }
         which_term = rand;
+        return words.get(which_term);
+    }
+
+    public GlossaryTerm previousTerm(){
+        which_term--;
+        if(which_term < 0){
+            which_term = words.size()-1;
+        }
+        return words.get(which_term);
+    }
+
+    public GlossaryTerm nextTerm(){
+        which_term++;
+        if(which_term > words.size()-1){
+            which_term = 0;
+        }
         return words.get(which_term);
     }
 }

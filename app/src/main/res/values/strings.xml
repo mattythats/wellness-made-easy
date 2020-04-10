@@ -11,6 +11,10 @@
     <!-- task1 strings -->
     <string name="t1_random_word_button">Random Word</string>
     <string name="t1_definition_button">Show Definition</string>
+    <string name="t1_nextWord">Next Word</string>
+    <string name="t1_previousWord">Previous Word</string>
+    <string name="play_word">Play Word</string>
+    <string name="play_definition">Play Definition</string>
     <string name="term_placeholder">%1$s</string>
     <string name="definition_placeholder">%1$s</string>
     <string name="chapter_placeholder">Chapter %1$d</string>

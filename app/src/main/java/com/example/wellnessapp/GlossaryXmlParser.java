@@ -55,6 +55,7 @@ public class GlossaryXmlParser {
         String term = null;
         String def = null;
         int chap = -1;
+        String drawable = null;
         while(parser.next() != XmlPullParser.END_TAG){
             if(parser.getEventType() != XmlPullParser.START_TAG){
                 continue;
@@ -65,12 +66,14 @@ public class GlossaryXmlParser {
             } else if(name.equals("definition")){
                 def = readDefinition(parser);
             } else if(name.equals("chapter")){
-                chap = readChapter(parser);
-            } else {
+                chap = readChapter(parser); //TODO: add drawable parse
+            } else if(name.equals("drawable")){
+                drawable = readDrawable(parser);
+            } else{
                 skip(parser);
             }
         }
-        return new GlossaryTerm(term, def, chap);
+        return new GlossaryTerm(term, def, chap, drawable);
     }
 
     private String readTerm(XmlPullParser parser) throws XmlPullParserException, IOException{
@@ -92,6 +95,13 @@ public class GlossaryXmlParser {
         int chapter = Integer.parseInt(readText(parser));
         parser.require(XmlPullParser.END_TAG, namespace, "chapter");
         return chapter;
+    }
+
+    private String readDrawable(XmlPullParser parser) throws XmlPullParserException, IOException{
+        parser.require(XmlPullParser.START_TAG, namespace, "drawable");
+        String drawable = readText(parser);
+        parser.require(XmlPullParser.END_TAG, namespace, "drawable");
+        return drawable;
     }
 
     private String readText(XmlPullParser parser) throws XmlPullParserException, IOException{
