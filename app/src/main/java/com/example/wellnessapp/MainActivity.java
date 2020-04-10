@@ -25,16 +25,24 @@ public class MainActivity extends AppCompatActivity {
         Log.i(activity, "openTask starts");
         Intent intent = null;
         if(v.getId() == R.id.to_glossary_button){
-            Log.i(activity, "glossary button clicked");
+            Log.i(activity, "Task1 triggered");
             intent = new Intent(this, Task1Activity.class);
-        } else {
+        } else if(v.getId() == R.id.to_puzzles_button){
+            Log.i(activity, "Task2 - triggered");
+            intent = new Intent(this, Task2Activity.class);
+        } else{
             Context context = getApplicationContext();
-            String s = "Not done yet";
-            Toast toast = Toast.makeText(context,s, Toast.LENGTH_LONG);
+            String s;
+            if(v.getId() == R.id.to_matching_button || v.getId() == R.id.to_story_button){
+                s = "This is Kyle's screen";
+            } else {
+                s = "Not done yet";
+            }
+            Toast toast = Toast.makeText(context,s, Toast.LENGTH_SHORT);
             toast.show();
         }
         if(intent != null){
-            Log.i(activity, "launching intent");
+            Log.i(activity, "launching intent from MainActivity");
             startActivity(intent);
         }
     }

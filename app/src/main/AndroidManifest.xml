@@ -15,8 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Task1Activity">
-        </activity>
+        <activity android:name=".Task1Activity"/>
+        <activity android:name=".Task2Activity"/>
+        <activity android:name=".WordSearchActivity"/>
+        <activity android:name=".CrosswordActivity"/>
     </application>
 
 </manifest>

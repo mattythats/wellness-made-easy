@@ -3,7 +3,7 @@
 
     <!-- splash screen strings-->
     <string name="task1_name">Term Glossary</string>
-    <string name="task2_name">Crossword Puzzles</string>
+    <string name="task2_name">Word Puzzles</string>
     <string name="task3_name">Take Parts</string>
     <string name="task4_name">Story</string>
     <string name="task5_name">Reading and Speaking Exercises</string>
@@ -14,4 +14,9 @@
     <string name="term_placeholder">%1$s</string>
     <string name="definition_placeholder">%1$s</string>
     <string name="chapter_placeholder">Chapter %1$d</string>
+
+    <!-- task2 strings -->
+    <string name="word_search_button">Health Word Search</string>
+    <string name="crossword_button">Diet Crossword</string>
+    <string name="word_bank">Word Bank</string>
 </resources>
